@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333333;
+    min-height: 100vh;
+  }
+  ul{
+    justify-content: center;
+    color: #1f8a9c;
+  }
+  h1,h2,h3,h6{
+    color: #1f8a9c;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  body{
+    background-image: url("bg.jpg");
+  }
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid ;
+    margin-bottom: 10px;
+    color: #080a0a;
+    
+  }
+  *img{
+    position: center;
+  }
+  ol{
+    color:#f5f7fa;
+  }
+  header h1 {
+    font-size: 2.15rem;
+    color: #1f8a9c;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  nav li {
+    background: #44f5c9;
+    color: white;
+    padding: 100px 200px;
+    border-radius: 205px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  nav li:hover {
+    background: #1ee2c8;
+  }
+  
+  main {
+    margin-top: 30px;
+    min-height: 300px;
+    position: relative;
+  }
+  
+  .page {
+    display: none;
+    padding: 20px;
+    background: rgb(21, 155, 144);
+    border-radius: 200px;
+    animation: fadeIn 0.5s ease-in-out;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .page.active {
+    display: block;
+    position: relative;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    color: #1f8a9c;
+    font-size: 0.9rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes popIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    nav li {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: #f7f9fc;
+    color: #333;
+    padding: 40px 20px;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .box {
+    background: rgb(231, 228, 238);
+    border-left: 6px solid #706380;
+    padding: 20px 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box h2 {
+    color: #d8d5df;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+  
+  .box p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+    
+  
